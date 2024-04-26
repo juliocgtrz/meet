@@ -1,7 +1,7 @@
 <h1>Meet App</h1>
 
 <h2>Description</h2>
-A progressive web app with the ability to work offline and a serverless backend developed using a TDD technique. Users of this app will be able to use it whenever they want to view upcoming events for a specific city. 
+A progressive web app with the ability to work offline and a serverless backend developed using a TDD technique. Users of this app will be able to use it whenever they want to view upcoming events for a specific city.
 
 <h2>Features</h2>
 <ol>
@@ -50,3 +50,6 @@ A progressive web app with the ability to work offline and a serverless backend 
   <li>Feature 6, Scenario 1: Show a chart with the number of upcoming events in each city.</li>
   <li>Feature 6, Scenario 1 (Gherkin Syntax): Given the app has data visualization; When the user selects to view the data charts; Then they will see charts depicting the number of upcoming events in each city.</li>
 </ul>
+
+<h2>How Serverless Functions will be Used</h2>
+Serverless functions will manage user access and maintain secure interactions between the app and the Google Calendar API. Using serverless allows for dynamic scalability based on user demand and efficient use of resources.
