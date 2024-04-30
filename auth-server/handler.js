@@ -20,7 +20,7 @@ module.exports.getAuthURL = async () => {
    * Scopes array is passed to the 'scope' option.
    * 
    */
-  const authURL = oAuth2Client.generateAuthUrl({
+  const authUrl = oAuth2Client.generateAuthUrl({
     access_type: "offline",
     scope: SCOPES,
   });
