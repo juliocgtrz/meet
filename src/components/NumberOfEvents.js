@@ -2,21 +2,12 @@
 
 import { useState } from "react";
 
-const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
+const NumberOfEvents = ({ }) => {
     const [numEvents, setNumEvents] = useState("32");
 
     const handleInputChanged = (event) => {
         const value = event.target.value;
         setNumEvents(value);
-
-        let errorText;
-        if (isNaN(value) || value <= 0) {
-            errorText = "Number must be greater than 0."
-        } else {
-            errorText = "";
-            setCurrentNOE(value);
-        }
-        setErrorAlert(errorText);
     }
 
     return (
@@ -24,6 +15,7 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
             <label htmlFor="number-of-events-input">Number of Events: </label>
             <input
                 type="text"
+                id="number-of-events-input"
                 className="number-of-events-input"
                 value={numEvents}
                 onChange={handleInputChanged}
