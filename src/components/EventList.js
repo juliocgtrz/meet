@@ -10,6 +10,6 @@ const EventList = ({ events }) => {
                 null}
         </ul>
     );
-}
+};
 
 export default EventList;
