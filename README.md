@@ -36,7 +36,7 @@ A progressive web app with the ability to work offline and a serverless backend 
   <li>Feature 2, Scenario 2: User can expand an event to see details.</li>
   <li>Feature 2, Scenario 2 (Gherkin Syntax): Given the event details are hidden; When the user clicks show details for a specific event; Then the event details should be shown.</li>
   <li>Feature 2, Scenario 3: User can collapse an event to hide details.</li>
-  <li>Feature 2, Scenario 3 (Gherkin Syntax): Given the event details have been hidden; When the user clicks hide details for an event that is open; Then the event details should be hidden.</li>
+  <li>Feature 2, Scenario 3 (Gherkin Syntax): Given the event details are shown; When the user clicks hide details for an event that is open; Then the event details should be hidden.</li>
   <li>Feature 3, Scenario 1: When user hasn't specified a number, 32 events are shown by default.</li>
   <li>Feature 3, Scenario 1 (Gherkin Syntax): Given the user has not specified a number of events to show; When searching for events; Then 32 events will be shown by default.</li>
   <li>Feature 3, Scenario 2: User can change the number of events displayed.</li>
