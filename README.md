@@ -38,9 +38,9 @@ A progressive web app with the ability to work offline and a serverless backend 
   <li>Feature 2, Scenario 3: User can collapse an event to hide details.</li>
   <li>Feature 2, Scenario 3 (Gherkin Syntax): Given the event details are shown; When the user clicks hide details for an event that is open; Then the event details should be hidden.</li>
   <li>Feature 3, Scenario 1: When user hasn't specified a number, 32 events are shown by default.</li>
-  <li>Feature 3, Scenario 1 (Gherkin Syntax): Given the user has not specified a number of events to show; When searching for events; Then 32 events will be shown by default.</li>
+  <li>Feature 3, Scenario 1 (Gherkin Syntax): Given the user has not specified a number of events to show; When viewing the list of events; Then 32 events will be shown by default.</li>
   <li>Feature 3, Scenario 2: User can change the number of events displayed.</li>
-  <li>Feature 3, Scenario 2 (Gherkin Syntax): Given less than 32 events are shown in the list of events; When the user specifies how many events should be shown; Then that number of events will be shown.</li>
+  <li>Feature 3, Scenario 2 (Gherkin Syntax): Given a number of events are specified; When the user views the list of events; Then that number of events will be shown.</li>
   <li>Feature 4, Scenario 1: Show cached data when there's no internet connection.</li>
   <li>Feature 4, Scenario 1 (Gherkin Syntax): Given the user wants to use the app offline; When they are not connected to the internet; Then the app will show event data from the cache.</li>
   <li>Feature 4, Scenario 2: Show error when user changes search settings (city, number of events).</li>
