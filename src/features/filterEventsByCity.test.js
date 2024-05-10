@@ -7,6 +7,7 @@ import userEvent from '@testing-library/user-event';
 const feature = loadFeature('./src/features/filterEventsByCity.feature');
 
 defineFeature(feature, test => {
+    //Scenario 1
     test('when user hasn’t searched for a city, show upcoming events from all cities.', ({ given, when, then }) => {
         given('user hasn’t searched for any city', () => {
     
@@ -27,8 +28,8 @@ defineFeature(feature, test => {
             });
         });
       });
-    
-      test('User should see a list of suggestions when they search for a city.', ({ given, when, then }) => {
+    //Scenario 2
+    test('User should see a list of suggestions when they search for a city.', ({ given, when, then }) => {
         
         let AppComponent;
         given('the main page is open', () => {
@@ -48,10 +49,9 @@ defineFeature(feature, test => {
             const suggestionListItems = within(CitySearchDOM).queryAllByRole('listitem');
             expect(suggestionListItems).toHaveLength(2);
         });
-      });
-    
-    
-      test('User can select a city from the suggested list.', ({ given, and, when, then }) => {
+    });
+    //Scenario 3
+    test('User can select a city from the suggested list.', ({ given, and, when, then }) => {
         
         let AppComponent;
         let AppDOM;
@@ -91,5 +91,5 @@ defineFeature(feature, test => {
             const berlinEvents = allEvents.filter(event => event.location === citySearchInput.value)
             expect(EventListItems).toHaveLength(berlinEvents.length);
         });
-      });
+    });
 });
