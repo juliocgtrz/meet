@@ -22,8 +22,8 @@ const EventGenresChart = ({events}) => {
             const filteredEvents = events.filter(event => event.summary.includes(genre));
             return {
                 name: genre,
-                value: filteredEvents.length,
-                color: colors[index]
+                value: filteredEvents.length
+                // color: colors[index]
             }
         })
         return data;
@@ -60,7 +60,7 @@ const EventGenresChart = ({events}) => {
             >
               {
                 data.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={entry.color} />
+                  <Cell key={`cell-${index}`} fill={colors[index]} />
                 ))
               }
             </Pie>
