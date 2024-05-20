@@ -22,8 +22,8 @@ const EventGenresChart = ({events}) => {
             const filteredEvents = events.filter(event => event.summary.includes(genre));
             return {
                 name: genre,
-                value: filteredEvents.length
-                // color: colors[index]
+                value: filteredEvents.length,
+                color: colors[index]
             }
         })
         return data;
@@ -38,7 +38,7 @@ const EventGenresChart = ({events}) => {
           <text
             x={x}
             y={y}
-            fill="#8884d8"
+            fill={colors[index]}
             textAnchor={x > cx ? 'start' : 'end'}
             dominantBaseline="central"
           >
