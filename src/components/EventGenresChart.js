@@ -60,7 +60,7 @@ const EventGenresChart = ({events}) => {
             >
               {
                 data.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={colors[index]} />
+                  <Cell key={`cell-${index}`} fill={entry.color} />
                 ))
               }
             </Pie>
