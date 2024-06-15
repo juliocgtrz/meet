@@ -53,3 +53,20 @@ A progressive web app with the ability to work offline and a serverless backend 
 
 <h2>How Serverless Functions will be Used</h2>
 Serverless functions will manage user access and maintain secure interactions between the app and the Google Calendar API. Using serverless allows for dynamic scalability based on user demand and efficient use of resources.
+
+<h2>Technologies</h2>
+<ul>
+  <li>React</li>
+  <li>Recharts</li>
+  <li>Google OAuth</li>
+  <li>Puppeteer</li>
+  <li>JEST</li>
+  <li>Cucumber Gherkin</li>
+</ul>
+
+<h2>Getting Started</h2>
+<ol>
+  <li>Clone the repository: https://github.com/juliocgtrz/meet</li>
+  <li>Install dependencies: $npm install</li>
+  <li>Start the application: $npm start</li>
+</ol>
